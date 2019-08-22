@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Interactive Chart Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="/home/user/IQ/D3/practice/bar_chart/style_sheet.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.9/dc.css"/>
+
+  <script src = "https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://rawgithub.com/NickQiZhu/dc.js/master/web/js/crossfilter.js"></script>
+  <script type="text/javascript" src="https://dc-js.github.io/dc.js/js/dc.js"></script>
+  
+</head>
+
+<body>
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-6">
+      <div id="chart"></div>
+      <div id="tax"></div>
+      <div id="tooltip" class="hidden">
+        <p><strong><span id="value"></span></strong></p>
+      </div>
+    </div>
+    
+    <div class="col-sm-6">
+      <div id="hour"></div>
+      <div id="weekday"></div>
+      <div id="month"></div>
+    </div>
+    <button type="button" class="btn btn-primary"> <a href="javascript:dc.filterAll(); dc.renderAll();">Reset All</a></button>
+   
+    <script type="text/javascript" src="/home/user/IQ/D3/dc-dashboard/scripts/chart.js"></script>
+  </div>
+</div>
+</body>
+</html>
